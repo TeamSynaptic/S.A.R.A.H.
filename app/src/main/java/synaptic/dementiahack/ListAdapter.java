@@ -13,10 +13,6 @@ import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * Created by Team Synaptic on 2017-03-04.
- */
-
 public class ListAdapter extends ArrayAdapter<Entry>{
     private final Context context;
     private ArrayList<Entry> entries;
@@ -42,13 +38,13 @@ public class ListAdapter extends ArrayAdapter<Entry>{
         finished_entries = x;
     }
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convert_view, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = inflater.inflate(R.layout.item_todo, parent, false);
-        TextView task_title = (TextView) rowView.findViewById(R.id.task_title);
+        View row_view = inflater.inflate(R.layout.item_todo, parent, false);
+        TextView task_title = (TextView) row_view.findViewById(R.id.task_title);
         task_title.setText(entries.get(position).getTitle());
-        Button task_delete = (Button) rowView.findViewById(R.id.task_delete);
+        Button task_delete = (Button) row_view.findViewById(R.id.task_delete);
         task_delete.setOnClickListener(delete_listener);
-        return rowView;
+        return row_view;
     }
 }

@@ -2,175 +2,157 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Rui\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_82d6b8c5616092e04f8b5a02e8d1d313c8c8a860\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_82d6b8c5616092e04f8b5a02e8d1d313c8c8a860.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_24e4aa50553dfdd6d26f730e90c91411503c5a9a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_141df578550a392eb02060c61a9efa6a25dd1701\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_141df578550a392eb02060c61a9efa6a25dd1701.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_4ceccc3201723d653ba221ef058150d027b331b8\classes.dex" />
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_24e4aa50553dfdd6d26f730e90c91411503c5a9a.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_9bd6f028647bb610adb04f05302373b56b26a2a8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_4c27bc91c24916737b684d2473e44ac1810270f6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_78bd6677f56d8d33998d745e2a5bab4bcf018124\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_9b8e1b893c930441cb9addfc0cfd2de15d0065f6\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_9b8e1b893c930441cb9addfc0cfd2de15d0065f6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_004a3f1317618758f00f0b2b3d8a6540da446591\classes.dex" />
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_9bd6f028647bb610adb04f05302373b56b26a2a8.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_4ceccc3201723d653ba221ef058150d027b331b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_78bd6677f56d8d33998d745e2a5bab4bcf018124.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_4c27bc91c24916737b684d2473e44ac1810270f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_7a14579d0824facee2af0031393d97f3f9a1ed97\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_7a14579d0824facee2af0031393d97f3f9a1ed97.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_359767becf5441cc5715f8ced45096eca3baa084\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1eb227de1eafaaeb19c9435f0649e1e6ccdf6a63\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_1eb227de1eafaaeb19c9435f0649e1e6ccdf6a63.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="0db43a56003b5c206d880e3f33fbc7271bede211">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_dc259bd9680e8e0a5df4fdd1f6d746757dfe68ea\classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_359767becf5441cc5715f8ced45096eca3baa084.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="cfa5da973fb1a8193ca25bcdf2df08124bff0761">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_199f9e0d828c42adedf6ae3fd3c8860aaefef543\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_1a0254bb4fb1fb6aebd90c93e0376b1292ca9e64\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_411991b7b40520bf5a276810706311b82acc24b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_964f3be556c96e9c07863e23447a7483055254f8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_5c8446ca23412f5e33025b2434932e307ce97630\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_5c8446ca23412f5e33025b2434932e307ce97630.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_1a0254bb4fb1fb6aebd90c93e0376b1292ca9e64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_004a3f1317618758f00f0b2b3d8a6540da446591.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_964f3be556c96e9c07863e23447a7483055254f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_411991b7b40520bf5a276810706311b82acc24b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_4fdbbbfaa1e0106481303238370c95fef8ddd2bd\classes.dex" />
+        <dex dex="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_4fdbbbfaa1e0106481303238370c95fef8ddd2bd.jar" />
     </item>
 
 </items>
