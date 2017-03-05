@@ -1,0 +1,7 @@
+#Sun Mar 05 08:54:56 EST 2017
+base.0=C\:\\Users\\Rui\\Desktop\\Developing\\app projects\\DementiaHack\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_dc259bd9680e8e0a5df4fdd1f6d746757dfe68ea
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Rui\\Desktop\\Developing\\app projects\\DementiaHack\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_199f9e0d828c42adedf6ae3fd3c8860aaefef543\\classes.dex
+base.1=C\:\\Users\\Rui\\Desktop\\Developing\\app projects\\DementiaHack\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_199f9e0d828c42adedf6ae3fd3c8860aaefef543
+file.0=C\:\\Users\\Rui\\Desktop\\Developing\\app projects\\DementiaHack\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_dc259bd9680e8e0a5df4fdd1f6d746757dfe68ea\\classes.dex
