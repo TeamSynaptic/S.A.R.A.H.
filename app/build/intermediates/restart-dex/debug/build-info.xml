@@ -5,29 +5,29 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="81654976447466"
+    timestamp="103910576793526"
     token="8515573492026445759"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="395" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="504" />
     <task
         name="verifier"
-        duration="0" />
+        duration="184" />
 
     <artifact
         location="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="81654976447466"
+        timestamp="103910576793526"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Rui\Desktop\Developing\app projects\DementiaHack\app\build\outputs\apk\app-debug.apk"

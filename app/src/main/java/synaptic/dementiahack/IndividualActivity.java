@@ -1,11 +1,11 @@
 package synaptic.dementiahack;
 
 import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,18 +23,19 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Scanner;
 
 import static android.util.Log.d;
 
 public class IndividualActivity extends AppCompatActivity{
     Button not_what_you_asked;
+    TextToSpeech tts;
     TextView i_heard;
     TextView i_think;
     TextView display_answer;
     static Socket socket;
     static String question = "";
     static String result = "";
-    static Context mc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,14 @@ public class IndividualActivity extends AppCompatActivity{
         setContentView(R.layout.individual_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int s) {
+                if(s != TextToSpeech.ERROR) {
+                    tts.setLanguage(Locale.US);
+                }
+            }
+        });
         Button mic = (Button) findViewById(R.id.mic_button);
         mic.setOnClickListener(individual_button_listener);
         not_what_you_asked = (Button) findViewById(R.id.not_what_you_asked);
@@ -48,7 +58,11 @@ public class IndividualActivity extends AppCompatActivity{
         i_heard = (TextView) findViewById(R.id.i_heard);
         i_think = (TextView) findViewById(R.id.i_think);
         display_answer = (TextView) findViewById(R.id.display_answer);
-        mc = getApplicationContext();
+        Toast toast = Toast.makeText(this, "Please tap the microphone icon to ask a question", Toast.LENGTH_LONG);
+        toast.show();
+    }
+    public void onAction(){
+        tts.speak(result, TextToSpeech.QUEUE_FLUSH, null);
     }
     /*
       * MANUAL INPUT LISTENER
@@ -82,7 +96,7 @@ public class IndividualActivity extends AppCompatActivity{
         Intent start_mic = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         start_mic.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
         start_mic.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        start_mic.putExtra(RecognizerIntent.EXTRA_PROMPT, "Speak something...");
+        start_mic.putExtra(RecognizerIntent.EXTRA_PROMPT, "Ask away!");
         try {
             startActivityForResult(start_mic, 1);
         } catch (ActivityNotFoundException a) {
@@ -92,11 +106,11 @@ public class IndividualActivity extends AppCompatActivity{
      * Callback for speech recognition activity
      * */
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode) {
+    protected void onActivityResult(int request_code, int result_code, Intent data) {
+        super.onActivityResult(request_code, result_code, data);
+        switch (request_code) {
             case 1:
-                if (resultCode == RESULT_OK && null != data) {
+                if (result_code == RESULT_OK && data != null) {
                     ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     question = result.get(0);
                     TextView display_result = (TextView) findViewById(R.id.display_text);
@@ -104,6 +118,7 @@ public class IndividualActivity extends AppCompatActivity{
                     not_what_you_asked.setVisibility(View.VISIBLE);
                     i_heard.setVisibility(View.VISIBLE);
                     i_think.setVisibility(View.VISIBLE);
+                    i_think.setText("Thinking...");
                     getMessage();
                 }
                 break;
@@ -114,25 +129,77 @@ public class IndividualActivity extends AppCompatActivity{
                 display_answer.setVisibility(View.INVISIBLE);
         }
     }
-    public void getMessage(){
+    public void getMessage() {
         if (question.toLowerCase().equals("hey sarah how are you doing today")) {
             display_answer.setVisibility(View.VISIBLE);
             display_answer.setText("I'm great. I feel like I was born just yesterday.");
+            i_think.setText("I think...");
+            result = "I'm great. I feel like I was born just yesterday.";
+            onAction();
         } else if (question.toLowerCase().equals("hey sarah who's your daddy")) {
             display_answer.setVisibility(View.VISIBLE);
             display_answer.setText("I have four dads: Emon, Rui, Alex and Mahir. I was created by Team Synaptic at Dementia Hack 2017.");
-        } else if (question.toLowerCase().equals("hey sarah what can i do about my dementia")){
+            i_think.setText("I think...");
+            result = "I have four dads: Emon, Rui, Alex and Mahir. I was created by Team Synaptic at Dementia Hack 2017.";
+            onAction();
+        } else if (question.toLowerCase().equals("hey sarah what can i do about my dementia")) {
             display_answer.setVisibility(View.VISIBLE);
             display_answer.setText("I'm not a doctor, but I'll always be by your side. How can I help?");
+            i_think.setText("I think...");
+            result = "I'm not a doctor, but I'll always be by your side. How can I help?";
+            onAction();
+        } else if(question.toLowerCase().equals("hey sarah") || question.toLowerCase().equals("hello sarah") || question.toLowerCase().equals("hi sarah")){
+            try {
+                display_answer.setVisibility(View.VISIBLE);
+                Scanner s = new Scanner(MainActivity.user_file);
+                String name = s.nextLine();
+                display_answer.setText("Hi " + name + "!");
+                result = "Hi " + name + "!";
+                onAction();
+            } catch (Exception e){}
+        } else if(question.toLowerCase().startsWith("when")){
+            getTime();
         } else getResponse();
+    }
+    public void getTime() {
+        new Thread(new Runnable() {
+            public void run() {
+                try {
+                    d("check", "here");
+                    socket = new Socket("192.168.137.68", 8888);
+                    d("check", "connected");
+                    PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
+                    writer.write("t1me\n");
+                    writer.write(question+"\n");
+                    writer.flush();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                    d("dd","reached1");
+                    result = reader.readLine();
+                    Log.d("result", result);
+                } catch (NullPointerException e) {
+                    d("Connecting", e.getMessage());
+                } catch (IOException ei){
+                    d("Connecting", ei.getMessage());
+                } catch (Exception e){
+                    d("WHY", e.getMessage());
+                }
+                display_answer.setVisibility(View.VISIBLE);
+                display_answer.post(new Runnable() {
+                    public void run() {
+                        display_answer.setText(result);
+                        i_think.setText("I think...");
+                        onAction();
+                    }
+                });
+            }
+        }).start();
     }
     public void getResponse() {
         new Thread(new Runnable() {
             public void run() {
-                // a potentially  time consuming task
                 try {
                     d("check", "here");
-                    socket = new Socket("192.168.137.26", 8888);
+                    socket = new Socket("192.168.137.68", 8888);
                     d("check", "connected");
                     PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
                     writer.write(question+"\n");
@@ -152,28 +219,11 @@ public class IndividualActivity extends AppCompatActivity{
                 display_answer.post(new Runnable() {
                     public void run() {
                         display_answer.setText(result);
+                        i_think.setText("I think...");
+                        onAction();
                     }
                 });
             }
         }).start();
     }
-    /*static TextToSpeech t1 = new TextToSpeech(mc.getApplicationContext(), new TextToSpeech.OnInitListener() {
-        @Override
-        public void onInit(int status) {
-            if(status != TextToSpeech.ERROR) {
-                t1.setLanguage(Locale.US);
-            }
-        }
-    });							//add this snippet to main activity
-    public void onWhateverAction(){	        //answer to query
-        t1.speak(result, TextToSpeech.QUEUE_FLUSH, null);
-    }
-
-    public void onPause(){
-        if(t1 !=null){
-            t1.stop();
-            t1.shutdown();
-        }
-        super.onPause();
-    }*/
 }
