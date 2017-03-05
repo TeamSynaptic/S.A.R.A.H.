@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:background="@drawable/ic_mic_black_24dp"
+        android:layout_width="104dp"
+        android:layout_gravity="center"
+        android:id="@+id/mic_button"
+        android:backgroundTint="@android:color/white"
+        android:layout_height="104dp"
+        android:elevation="0dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/display_text"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:layout_below="@+id/i_heard"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Not what you asked?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/not_what_you_asked"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:text="I heard..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_heard"
+        android:visibility="invisible"
+        android:textSize="22sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/mic_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:id="@+id/display_answer"
+        android:layout_below="@+id/i_think"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="I think..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        android:layout_marginTop="48dp"
+        android:id="@+id/i_think"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/i_heard"
+        android:layout_alignStart="@+id/i_heard" />
+
+</RelativeLayout>
