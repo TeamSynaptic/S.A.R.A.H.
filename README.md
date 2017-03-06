@@ -9,10 +9,10 @@ Build:
 * Tools - Android Studio, Sublime Text 3
 
 Team: 
-* Rui Li - @Rui_L - Full Stack
-* Emon Sen Majumder - @Emon - Design, Graphics, Business
-* Yuan Shi - @Yu_An_S - Back-End
-* Mahir Rahman - @Mahir_R - Back-End
+* Rui Li - cynicalpillow - Full Stack
+* Emon Sen Majumder - EmonSen - Design, Graphics, Business
+* Yuan Shi - alexshi0000 - Back-End
+* Mahir Rahman - mahir360 - Back-End
 
 The Full Story: 
 As a group of Grade 11 high school students, our first DementiaHack presented a daunting yet extremely exciting opportunity to go out of our coding comfort zones while giving back to the community! As a team of 4 self-taught novice programmers, our day started with merely an idea that we were determined to make a reality. Fast forward about 30 hours, and we are proud of the current feature set of S.A.R.A.H.. We intend to continue supporting and improving on our app as we have dozens of more features we would love to implement, ranging from adding more compatible relevant question and answer types based on different stages of Dementia to integration with appliance status apps. Feel free to email us at:
