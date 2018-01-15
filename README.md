@@ -8,7 +8,7 @@ Build:
 * Libraries - Standard Java, Android SDK
 * Tools - Android Studio, Sublime Text 3
 
-Team: 
+Team and Primary Roles: 
 * Rui Li - cynicalpillow - Full Stack
 * Emon Sen Majumder - EmonSen - Design, Graphics, Business
 * Yuan Shi - alexshi0000 - Back-End
